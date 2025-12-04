@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Terrifier 2 Movie Webpage</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nosifer&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    color: red;
+    font-family: "Nosifer", sans-serif;
+    background: black;
+	   cursor: url('bloody_cursor.png') 16 16, auto;
+  }
+
+  /* Background video */
+  #bg-video {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+  header img {
+    max-height: 100px;
+  }
+
+  
+  .left-panel {
+    display:inline-block;
+    width: 250px;
+    padding: 20px;
+	  vertical-align: top;
+  }
+
+  .nav-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+  }
+  .nav-box:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+ 
+  .right-panel {
+   display:inline-block;
+	  vertical-align: top;
+    width: 420px;
+    padding: 20px;
+	  margin-left: 500px;
+	  text-align: center;
+  }
+  .right-panel iframe {
+    width: 100%;
+    height: 240px;
+    border: none;
+    border-radius: 8px;
+	  
+  }
+
+  /* Footer */
+  footer {
+ 
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    z-index: 20;
+  }
+
+  .social-icons a {
+    color: red;
+    font-size: 2em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Background video -->
+<video id="bg-video" autoplay muted loop>
+  <source src="terrifier_video.mp4" type="video/mp4">
+</video>
+
+<!-- Header -->
+<header>
+  <img src="banner.png" alt="Logo" />
+</header>
+
+<!-- Left Navigation Menu -->
+<div class="left-panel">
+  <div class="nav-box">Home</div>
+  <div class="nav-box">Trailer</div>
+  <div class="nav-box">Get Tickets</div>
+  <div class="nav-box">Synopsis</div>
+  <div class="nav-box">Cast</div>
+  <div class="nav-box">Soundtrack</div>
+  <div class="nav-box">About</div>
+</div>
+
+<!-- Right Panel with Trailer -->
+<div class="right-panel">
+  <h2>Watch Official Trailer Now!</h2>
+  <iframe src="https://www.youtube.com/embed/fN5j1MtGO2Q" allowfullscreen></iframe>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="social">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+  </div>
+
+  <div class="rights">
+    <p>&copy; 2025, Terrifier 2 Promotional Movie Webpage, Eyemazing Design/Julio Ortiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

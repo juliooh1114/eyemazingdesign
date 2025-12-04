@@ -18,9 +18,23 @@
     color: red;
     font-family: "Nosifer", sans-serif;
     background: black;
-	   cursor: url('bloody_cursor.png') 16 16, auto;
+	
+	  /* CUSTOM CURSOR */
+    cursor: url('bloody_cursor.png') 46 46, auto;
+	  
   }
-
+/* APPLY CUSTOM CURSOR TO ALL CLICKABLE ELEMENTS */
+  a, 
+  button, 
+  .nav-box, 
+  img, 
+  iframe, 
+  input, 
+  select, 
+  textarea,
+  .social-icons a {
+    cursor: url('bloody_pointer.png') 16 16, auto !important;
+	}
   /* Background video */
   #bg-video {
     position: fixed;

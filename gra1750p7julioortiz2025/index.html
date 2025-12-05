@@ -54,6 +54,23 @@
     position: relative;
     z-index: 10;
   }
+	.glitch-logo {
+  display: inline-block;
+  animation: flicker 1.5s infinite;
+  filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
+}
+
+/* Flicker keyframes */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px red) drop-shadow(0 0 10px red);
+  }
+  20%, 24%, 55% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 2px red) drop-shadow(0 0 5px red);
+  }
+}
   header img {
     max-height: 100px;
   }
@@ -75,9 +92,10 @@
     transition: 0.2s;
     text-align: center;
   }
-  .nav-box:hover {
-    background: rgba(255, 255, 255, 0.25);
-  }
+ .nav-box:hover {
+  background: rgba(255,255,255,0.25);
+}
+
 
  
   .right-panel {
@@ -134,7 +152,7 @@
 
 <!-- Header -->
 <header>
-  <img src="banner.png" alt="Logo" />
+  <img src="banner.png" alt="Logo" class="glitch-logo"/>
 </header>
 
 <!-- Left Navigation Menu -->

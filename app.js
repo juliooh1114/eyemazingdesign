@@ -1,0 +1,5 @@
+const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav');
+menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'Close':'Menu';nav.classList.toggle('open',open)});
+nav?.addEventListener('click',event=>{if(event.target.closest('a')){menu.setAttribute('aria-expanded','false');menu.textContent='Menu';nav.classList.remove('open')}});
+const images=document.querySelectorAll('[data-image]');
+if(images.length){const modal=document.createElement('dialog');modal.setAttribute('aria-label','Enlarged project artwork');const close=document.createElement('button');close.textContent='Close';close.type='button';const img=document.createElement('img');modal.append(close,img);document.body.append(modal);close.addEventListener('click',()=>modal.close());modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});images.forEach(button=>button.addEventListener('click',()=>{img.src=button.dataset.image;img.alt=button.dataset.alt||'Project artwork';modal.showModal()}))}

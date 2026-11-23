@@ -1,0 +1,23 @@
+PORTAFOLIO WEB - JULIO ORTIZ / EYEMAZING DESIGN
+
+Este sitio está completo en HTML, CSS y JavaScript. No requiere instalar dependencias ni compilar.
+
+PARA PUBLICAR
+1. Extrae el ZIP.
+2. Sube el contenido de la carpeta Eyemazing_Portfolio a la carpeta pública de tu hosting.
+3. index.html debe quedar en la raíz del sitio publicado.
+4. Conserva las carpetas assets, about y work con sus nombres y estructura.
+
+CONTENIDO
+- index.html: página principal.
+- style.css: diseño y adaptación a pantallas pequeñas.
+- app.js: menú móvil y ampliación de imágenes.
+- work: siete páginas de proyectos.
+- about: información profesional.
+- assets: imágenes optimizadas, currículum y portafolio PDF.
+
+VISTA LOCAL
+Para verlo antes de publicarlo, abre la carpeta en un servidor local, por ejemplo Live Server de Visual Studio Code. Abrir index.html directamente como archivo puede impedir que funcionen las rutas que empiezan con /.
+
+NOTAS
+Los enlaces de contacto abren el correo del visitante. No hay formulario ni base de datos que configurar. El PDF conserva la nota del enlace web pendiente; puedes actualizarla con tu dominio definitivo después de publicar.
